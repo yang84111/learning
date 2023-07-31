@@ -1,0 +1,130 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+@total-width:750;
+.w{
+    width: (693/40rem);
+    margin: 0 auto;
+}
+
+html{
+    font-size: (100vw/@total-width)*40vw;
+    background-color: #eff0f4;
+}
+a{
+    text-decoration: none;
+}
+.top:extend(.w){
+    display: flex;
+    height: (175/40rem);
+    align-items: center;
+    justify-content:space-between;
+    a{
+        font-size: (60/40rem);
+        color: #24253D;
+        i{
+            font-size: (40/40rem);
+            color: #999;
+        }
+    }
+}
+.banner:extend(.w){
+    img{
+        width: 100%;
+    }
+}
+.list:extend(.w){
+    height: (330/40rem);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-between;
+    align-content: space-evenly;
+    a{
+        width: (327/40rem);
+        height: (104/40rem);
+        text-align: center;
+        line-height: (104/40rem);
+        color: #fff;
+        border-radius: (10/40rem);
+        font-size: (32/40rem);
+        i{
+            margin: 0 (15/40rem) 0 (15/40rem);
+        }
+    }
+    .course{
+        background-color: #F97053;
+    }
+    .star{
+        background-color: #CD6EFE;
+    }
+    .sub{
+        background-color: #FE4479;
+    }
+    .download{
+        background-color: #1BC4FB;
+    }
+}
+.course-list:extend(.w){
+    height: (438/40rem);
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: (33/40rem);
+            color: #24253d;
+            border-left: 2px solid #3a84ff;
+            padding-left: 6px;
+        }
+        a{
+            font-size: (28/40rem);
+            color: #656565;
+        }
+    }
+}
+.user-list{
+    margin-top: (20/40rem);
+    display: flex;
+    overflow: auto;
+}
+.user{
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: (320/40rem);
+    height: (324/40rem);
+    margin-right: (22/40rem);
+    &:last-child{
+        margin-right: 0px;
+    }
+    background-color: #fff;
+    border-radius: 5px;
+    padding:0 (22/40rem);
+    box-shadow: 0 0 10px rgba(0, 0,0, .1);
+    h3{
+        font-size: (32/40rem);
+        color: #24253D;
+    }
+    img{
+        width: 100%;
+    }
+}
+.user .uesr-info{
+    display: flex;
+    justify-content: space-;
+    align-items: center;
+    .avatar{
+        width: (42/40rem);
+        height: (42/40rem);   
+    }
+    .user-name{
+        font-size: (30/40rem);
+        color: #969393;
+        margin-left: 6px;
+    }
+}

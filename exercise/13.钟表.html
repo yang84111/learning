@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clock{
+            margin: 100px 400px;
+            width:1024px;
+            height: 1024px;
+            background-image: url(./img/13/bg.png);
+        } 
+        .hour-wapper{
+            width: 1024px;
+            height: 1024px;
+            /* background-color: aqua; */
+            animation: run 43200s infinite linear;
+            position: absolute;
+        }
+        .hour{
+            width: 30px;
+            height: 262px;
+            background-color: blue;
+            margin: auto;
+            margin-top: 250px;
+        }
+        .min-wapper{
+            width: 1024px;
+            height: 1024px;
+            /* background-color: #bfa; */
+            position: absolute;
+            animation: run 3600s infinite steps(60);
+        }
+        .min{
+            width: 20px;
+            height: 362px;
+            background-color: green;
+            margin: auto;
+            margin-top: 150px;
+        }
+    
+        .src-wapper{
+            width: 1024px;
+            height: 1024px;
+            position: absolute;
+            /* background-color: #bfa; */
+            animation: run 60s infinite steps(60) ;
+            
+        }
+        .src{
+            width: 10px;
+            height: 432px;
+            background-color: red;
+            margin: auto;
+            margin-top: 80px;
+        }
+        @keyframes run {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour-wapper">
+            <div class="hour"></div>
+        </div>
+        <div class="min-wapper">
+            <div class="min"></div>
+        </div>
+        <div class="src-wapper">
+            <div class="src"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

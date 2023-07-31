@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 200px 100px;
+            /*变形通过css来改变元素的形状和位置  变形不会影响页面的布局
+                transform 用来设置元素的变形效果
+                    平移：translateX() 沿着X轴平移
+                          translateY() 沿着Y轴平移
+                          translateZ() 沿着Z轴平移
+                            平移时百分比是相对于自身计算
+                    */
+            transform: translate();
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 200px 100px;
+        }
+        .box3,.box4{
+            width: 200px;
+            height: 300px;
+            background-color: #bfa;
+            float: left;
+            margin: 100px 10px;
+            transition: all 0.5s;
+        }
+        .box3:hover{
+            transform: translateY(-5px) ;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 800px;
+            border: 10px solid red;
+            /*设置弹性盒*/
+            display: flex;
+        }
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: #bfa;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            /*弹性的增长系数*/
+            flex-grow: 1;
+            /*弹性元素缩减系数  缩减多少根据元素大小来计算*/
+            flex-shrink: 1;
+            /* flex-basis: ;元素基础长度 指定元素在主轴上的基础长度
+                    默认值： auto  表示参考元素自生的宽度或高度*/
+            flex-basis: 100px;
+
+            /*flex可以设置弹性元素所有的三个样式
+                flex: 增长 缩减 基础长度;
+                    initial "flex:0 1 auto"
+                    auto   "flex: 1 1 auto
+                    none  "0 0 auto"  弹性元素没有弹性*/
+            flex: 1 1 auto;
+        }
+        
+        li:nth-child(1){
+            /* order 决定弹性元素得排列顺序 */
+            order: 2;
+        }
+        li:nth-child(2){
+            background-color: pink;   
+            /* order: 1;    */
+        }
+        li:nth-child(3){
+            background-color: orange;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+</body>
+</html>

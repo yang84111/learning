@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--audio标签用来向页面引入一个外部的音视频文件
+        音视频文件引入时不允许用户自己控制播放停止
+        属性：controls 是否允许用户控制播放
+            autoplay 音视频是否自动播放
+            如果设置了autoplay 则音乐会在打开页面上自动播放，但目前大部分都不会自动播放
+            loop 音乐是否循环播放 -->
+    <audio src="./source/我记得 - 赵雷.mp3" controls autoplay loop></audio>
+    <!--除了通过src来指定外部文件路径，也可以使用source来指定文件路径-->
+    <audio controls>
+        浏览器不支持，请升级！
+        <source src="./source/我记得 - 赵雷.mp3">
+        <source src="./source/我记得 - 赵雷.ogg">
+        <embed src="./source/我记得 - 赵雷 .mp3" type="audio/mp3" width="" height="">
+    </audio>
+
+    <!--使用video来向网页引入一个视频文档,使用和audio基本一样-->
+    <video controls>
+        <source src="./source/flower.mp4">
+        <source src="./source/flower.webm">
+        <embed src="./source/flower.mp4" type="video/mp4">  
+    </video>  <!--上面三个按照先后顺序选择 -->
+    <!-- <video src="./source/flower.mp4" controls></video> -->
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+</head>
+<style>
+    .list{
+        width: 590px;
+        height: 470px;
+        margin: 50px auto;
+        position: relative;
+    }
+    .list li{
+        position: absolute;
+    }
+    .list li:last-child{
+        z-index: 1;
+    }
+    .btm{
+        position: absolute;
+        z-index: 9999;
+        bottom: 5px;
+    }
+    .btm a{
+        width: 10px;
+        height: 10px;
+        background-color:rgba(255, 255,255, .3);
+        float: left;
+        border-radius: 50%;
+        margin-left: 5px;
+        /* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+        background-clip: content-box;
+        border: 2px solid transparent;
+    }
+    .btm a.active,
+    .btm a:hover{
+        background-color: #fff;
+        border: 2px solid rgba(255, 255,255, .3);
+    }
+    /* .btm a:hover{
+        color: white;
+        border: 4px solid red;
+    } */
+</style>
+<body>
+    <ul class="list">
+        <li class="s1"><a href=""><img src="./京东轮播图img/1.jpg" alt=""></a></li>
+        <li><a href=""><img src="./京东轮播图img/2.jpg" alt=""></a></li>
+        <li><a href=""><img src="./京东轮播图img/3.jpg" alt=""></a></li>
+        <li><a href=""><img src="./京东轮播图img/4.jpg" alt=""></a></li>
+        <li><a href=""><img src="./京东轮播图img/5.jpg" alt=""></a></li>
+        <li><a href=""><img src="./京东轮播图img/6.jpg" alt=""></a></li>
+        <li><a href=""><img src="./京东轮播图img/7.jpg" alt=""></a></li>
+        <li><a href=""><img src="./京东轮播图img/8.jpg" alt=""></a></li>
+        <div class="btm">
+            <a class="active" href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </ul>
+</body>
+</html>

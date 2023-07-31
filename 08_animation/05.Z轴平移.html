@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /*设置当前网页的视距为800px，人眼与网页的距离*/
+            perspective: 800px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 200px auto;
+            /*Z轴平移 调整元素在Z轴的位置，正常情况下调整元素与人眼距离
+                距离越大 元素离人越近
+            Z轴平移立体效果 默认情况下网页不支持透视 如果需要看见必须要设置网页的视距*/
+            /* transform: translateZ(200px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

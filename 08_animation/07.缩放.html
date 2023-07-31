@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            transition: 2s;
+
+            /* transform-origin: ;变形的原点  默认值center*/
+            transform-origin: center;
+        }
+        .box1:hover{
+            /* transform: scale();  对元素进行缩放的函数
+                    scale()  双方向的缩放
+                    scaleX() 
+                    scaleY()*/
+            transform: scaleX(.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

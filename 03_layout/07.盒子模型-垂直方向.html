@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* .outer{
+            background-color: aqua; 
+            默认情况下父元素的高度被内容撑开
+        } */
+        /* .inner{
+            height: 200px;
+            width: 100px;
+            background-color: yellow;
+            margin-bottom: 100px;
+        }  */
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color:aqua;
+
+            overflow:auto;
+            overflow-x:auto;
+            overflow-y:auto ;
+        }
+        /*子元素是在父元素的内容区中排列   
+        如果子元素的大小超过了父元素，则子元素会从父元素中溢出
+           
+        使用overflow属性来设置父元素处理溢出的子元素
+        可选值:  visible  默认值  子元素会溢出   在父元素外显示
+                hidden  溢出内容会被裁剪而不显示
+                scroll  生成两个滚动条可以滚动   查看完整内容
+                auto   自动根据需要生成滚定条
+                
+                overflow-x: ;
+                overflow-y: ;  自动处理水平和垂直方向上的溢出*/
+        .box2{
+            width: 100px;
+            height: 400px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div> -->
+    <div class="box1">
+        文字是人类用符号记录表达信息以传之久远的方式和工具。现代文字大多是记录语言的工具。人类往往先有口头的语言后产生书面文字，很多小语种，有语言但没有文字。文字的不同体现了国家和民族的书面表达的方式和思维不同。文字使人类进入有历史记录的文明社会。文字按字音和字形，可分为表形文字、表音文字和意音文字。按语音和语素，可分为音素文字、音节文字和语素文字。 表形文字是人类早期原生文字的象形文字，比如：古埃及的圣书字、两河流域的楔形文字、古印度文字、美洲的玛雅文和早期的汉字。意音文字是由表义的象形符号和表音的声旁组成的文字，汉字是由表形文字进化成的表意文字，汉字也是语素文字，也是一种二维文字。
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--图片标签用于向当前页面引入一个外部图片
+        使用img标签来引入外部图片，img是一个自结束标签
+        img属于替换元素（块和行内元素之间具有两种元素的特点）
+        属性：src属性指定的是外部图片的路径-->
+    <img width="400" src="./img/2.gif">
+    <img width="200" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.7KW5GT7NQ8yUGlBbCHEm0gHaNK?pid=ImgDet&rs=1" alt="">
+    <!--alt属性是对图片的描述
+            描述在默认情况下不会显示，有些浏览器会在图片显示不出来是显示描述
+            搜索引擎会根据alt中的内容来识别图片，不写alt属性则搜索引擎不会收录-->
+    <!--width：图片的宽度（单位是像素）
+        height：图片的高度
+                宽度或者高度只改变一个，图片会等比例缩放-->
+    <!--注意：：：一般情况下在pc端不建议修改图片的大小，需要多大的图片就裁剪多大
+        但是在移动端经常需要对图片进行缩放 -->
+    <img width="300" src="./img/1.gif" alt="猫猫">
+
+    <!--图片的格式：
+            （jpeg）jpg：
+                支持的颜色比较丰富，不支持透明效果，不支持动图
+                一般用来显示照片
+            gif ：
+                支持颜色较少，支持简单透明，支持动图
+                适合表示颜色单一的图片和动图
+            png ：
+                支持颜色丰富，支持负责透明，不支持动图
+                颜色丰富，负责透明的图片（专为网页而生）
+            webp ：谷歌新推出的专门用来表示网页中的图片的一种格式
+                  具备了其他图片格式的所有有点，而且文件还小
+                缺点：兼容性不好
+            
+            base64：将图片使用base64进行编码，这样可以将图片转换为字符，通过字符的形式来引入图片
+                    一般都是一些需要和网页一起加载的图片才使用base64
+
+        效果一样用小的，效果不一样用效果好的
+        -->
+
+</body>
+</html>

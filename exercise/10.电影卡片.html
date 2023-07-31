@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        /* .clearfix::before,.clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        } */
+        .all{
+            width: 240px;
+            /* height: 320px; */
+            margin: 0 100px;
+            color: #A3A5A2;
+            position: relative;
+            border: 1px solid #F0F1EF;
+            /* background-color: aqua; */
+            box-shadow: 2px 2px 2px #E3E4E2;
+        }
+        .pic{
+            width: 240px;
+            height: 158px;
+            background-image: url('./电影卡片/1.jpg');
+            background-repeat: no-repeat;
+        }
+        .title{
+            margin: 8px;
+            padding-left: 8px;
+        }
+        .title .fas{
+            margin-top: 10px;
+            font-size: 9px;
+            margin-left: 4px;
+        }
+        .title span{
+            font-size: 16px;
+        }
+        .word{
+            font-size: 14px;
+            margin: 10px 19px;
+            line-height: 20px;
+        }
+        .bottom{
+            border-top: 1px solid #F2F4F1;
+            height: 46px;
+            line-height: 46px;
+            padding: 0 18px;
+        }
+        .buttom .fa-star{
+            float: left;
+        }
+        .linehight{
+            color: #B8C43D;
+        }
+        .link {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="all clearfix">
+        <div class="pic">
+        </div>
+        <div class="middle">
+            <div class="content">
+                <div class="title">
+                    <h1>Animation films</h1>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Animations</span>
+                </div>
+                <div class="word"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia.</span></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <i class="fas fa-star linehight"></i>
+            <i class="fas fa-star linehight"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <div class="link">
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

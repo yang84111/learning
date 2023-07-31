@@ -1,0 +1,49 @@
+.box1{
+    .box2{
+        color: red;
+    }
+    >.box3{
+        color: red;
+        &:hover{
+            color: blue;
+        }
+    }
+    // 为box1设置一个hover
+    // &表示外层的父元素
+    &:hover{
+        color: orange;
+    }
+}
+
+.p1{
+    width: 100px;
+    height: 100px;
+}
+.p2:extend(.p1){
+    color: red;
+}
+.p3{
+    .p1();
+}
+.p4(){
+    width: 100px;
+    height: 100px;
+}
+.p5{
+    .p4;
+}
+
+//混合函数  在里面可以直接设置变量
+// 设置默认值  不设置时就用默认值
+.test(@w:500px,@h){
+    width: @w;
+    height: @h;
+    border: 1px solid red;
+}
+div{
+    //调用混合函数按顺序传递参数
+    // .test(200px,100px)
+
+    //
+    .test(@h:100px)
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 在css中可以直接使用颜色名来设置颜色但是不方便
+            
+            RGB值：通过三种颜色不同的浓度来调配出不同的颜色red，green，blue
+                每一种颜色的范围在0 - 255之间
+                语法： RGB(红色，绿色，蓝色)
+            
+            RGBA: 在RGB基础上增加了透明度，四个值，第四个表示不透明度  1表示不透明，0表示完全透明
+            
+            十六进制的RGB值：
+                    语法：#红色绿色蓝色
+                        浓度通过00-ff表示
+            
+            HSL值 HSLA值：H 色相      0-360
+                         S  饱和度    0-100%         
+                         L  亮度      0-100%
+                         */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            background-color:rgb(255,0,0);
+            background-color:rgb(0,255,0);
+            background-color:rgb(0,0,255);
+            background-color:rgb(0,0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

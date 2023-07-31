@@ -1,0 +1,130 @@
+* {
+  margin: 0 ;
+  padding: 0;
+}
+.w,
+.top,
+.banner,
+.list,
+.course-list {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+.top {
+  display: flex;
+  height: 4.375rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.top a {
+  font-size: 1.5rem;
+  color: #24253D;
+}
+.top a i {
+  font-size: 1rem;
+  color: #999;
+}
+.banner img {
+  width: 100%;
+}
+.list {
+  height: 8.25rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+.list a {
+  width: 8.175rem;
+  height: 2.6rem;
+  text-align: center;
+  line-height: 2.6rem;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+.list a i {
+  margin: 0 0.375rem 0 0.375rem;
+}
+.list .course {
+  background-color: #F97053;
+}
+.list .star {
+  background-color: #CD6EFE;
+}
+.list .sub {
+  background-color: #FE4479;
+}
+.list .download {
+  background-color: #1BC4FB;
+}
+.course-list {
+  height: 10.95rem;
+}
+.course-list .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-list .title h2 {
+  font-size: 0.825rem;
+  color: #24253d;
+  border-left: 2px solid #3a84ff;
+  padding-left: 6px;
+}
+.course-list .title a {
+  font-size: 0.7rem;
+  color: #656565;
+}
+.user-list {
+  margin-top: 0.5rem;
+  display: flex;
+  overflow: auto;
+}
+.user {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 8rem;
+  height: 8.1rem;
+  margin-right: 0.55rem;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 0.55rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.user:last-child {
+  margin-right: 0px;
+}
+.user h3 {
+  font-size: 0.8rem;
+  color: #24253D;
+}
+.user img {
+  width: 100%;
+}
+.user .uesr-info {
+  display: flex;
+  justify-content: space-;
+  align-items: center;
+}
+.user .uesr-info .avatar {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.user .uesr-info .user-name {
+  font-size: 0.75rem;
+  color: #969393;
+  margin-left: 6px;
+}
+/*# sourceMappingURL=./17.css.map */

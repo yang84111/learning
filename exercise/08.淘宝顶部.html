@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        .top {
+            height: 35px;
+            background-color: #F5F5F5;
+            border-bottom: 1px solid #EEEEEE;
+        }
+        .top-list {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .fas{
+            font-size: 5px;
+            color: #A0A0A0;
+        }
+        .left{
+            float: left;
+        }
+        .left-list li{
+            float: left;
+            font-size: 13px;
+            line-height: 35px;
+        }
+        .span{
+            color: #3C3C3C;
+        }
+        .left-list a{
+            color: #6C6C6C;
+            padding: 0 5px;
+            text-decoration: none;
+        }
+
+        .left-list a:hover{
+            color: #F22E00;
+        }
+        .location{
+            position: relative;
+        }
+        .left-first{
+            border: 1px solid transparent;
+            padding: 0 3px;
+            position: relative;
+        }
+        .location:hover .left-first{
+            background-color: white;
+            border: 1px solid #EEEEEE;
+            border-bottom: none;
+            z-index: 10000;
+        }
+        .location:hover .left-first-droplist{
+            display: block;
+        }
+        .left-first-droplist{
+            width: 330px;
+            height: 350px;
+            position: absolute;
+            margin: -1px ;
+            border: 1px solid #EEEEEE;
+            background-color: white;
+            display: none;
+            z-index: 999;
+        }
+        .highlight{
+            color: #F22E00;
+        }
+        .right {
+            float: right;
+        }
+        .right-list li{
+            float: left;
+            font-size: 13px;
+            line-height: 35px;
+        }
+        .right-list a{
+            color: #6C6C6C;
+            text-decoration: none;
+        }
+        .right-list li{
+            padding:0 7px;
+        }
+        .right-list a:hover{
+            color: #F22E00;
+        }
+        .mytaobao{
+            position: relative;
+            border: 1px solid transparent;
+            padding: 0px 5px;
+            border-bottom: none;
+            z-index: 1000;
+        }
+        .right-first{
+            position: relative;
+            border: 1px solid transparent;
+            padding: 0px 5px;
+            margin-top: -1px;
+            z-index: 1000;
+        }
+        .mytaobao:hover .right-first{
+            background-color: white;
+            border: 1px solid #EEEEEE;
+            border-bottom: none;
+            padding: 0px 5px;
+            /* position: relative; */
+            /* z-index: 1000; */
+        }
+        .mytaobao:hover .right-first-droplist{
+            display: block;
+        }
+        .right-first-droplist{
+            border-top: none;
+            width: 110px;
+            height: 100px;
+            background-color: white;
+            margin:-1px -6px;
+            border: 1px solid #EEEEEE;
+            display: none;
+            position: absolute;
+            z-index: 999;
+        }
+        .line{
+            width: 1px;
+            height: 15px;
+            background-color: #E2DDDD;
+            margin: 10px 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-list">
+            <div class="left">
+                <ul class="left-list">
+                    <li>
+                        <div class="location">
+                            <div class="left-first">
+                                <span class="span">中国大陆</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="left-first-droplist">
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="highlight">亲，请登录</a></li>
+                    <li><a href="#">免费注册</a></li>
+                    <li><a href="#">手机逛淘宝</a></li>
+                    <li><a href="#">网页无障碍</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="right-list">
+                    <li>
+                        <div class="mytaobao">
+                            <div class="right-first">
+                                <a href="#">我的淘宝</a>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="right-first-droplist">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-shopping-cart highlight"></i>
+                        <a href="#">购物车</a>
+                    </li>
+                    <li>
+                        <div class="collection">
+                            <div class="things">
+                                <i class="fas fa-star"></i>
+                                <a href="#">收藏夹</a>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="collection-droplist">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">商品分类</a>
+                    </li>
+                    <li>
+                        <a href="#">免费开店</a>
+                    </li>
+                    <li>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <div class="center">
+                            <div class="center-first">
+                            <a href="#">千万买件中心</a>
+                            <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="center-droplist">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact">
+                            <div class="contact-first">
+                            <a href="#">联系客服</a>
+                            <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="contact-droplist">                          
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

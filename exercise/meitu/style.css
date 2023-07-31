@@ -1,0 +1,142 @@
+a {
+  text-decoration: none;
+  color: #ededed;
+}
+a:hover {
+  color: #c3c2c2;
+}
+.top-wapper {
+  background-color: #000;
+}
+.top {
+  max-width: 1210px;
+  margin: 0 auto;
+  height: 48px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  justify-content: space-between;
+}
+.left-list {
+  width: 18px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.left-list .list {
+  width: 18px;
+  height: 15px;
+  position: relative;
+}
+.left-list .list li {
+  position: absolute;
+  transform-origin: left;
+  transition: 0.5s;
+}
+.left-list .list li:nth-child(1) {
+  width: 18px;
+  height: 1px;
+  background-color: #fff;
+}
+.left-list .list li:nth-child(2) {
+  width: 18px;
+  height: 1px;
+  top: 6px;
+  background-color: #fff;
+}
+.left-list .list li:nth-child(3) {
+  width: 18px;
+  height: 1px;
+  top: 12px;
+  background-color: #fff;
+}
+.left-list .list:hover li:nth-child(1) {
+  transform: rotateZ(40deg);
+}
+.left-list .list:hover li:nth-child(2) {
+  opacity: 0;
+}
+.left-list .list:hover li:nth-child(3) {
+  transform: rotateZ(-40deg);
+}
+.left-list:hover .meau {
+  display: block;
+}
+.meau {
+  position: absolute;
+  top: 48px;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 50px;
+  display: none;
+}
+.meau li {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.meau li a {
+  display: block;
+  line-height: 44px;
+  font-size: 14px;
+}
+.meau li span {
+  color: #fff;
+  font-size: 14px;
+}
+.meau li:last-child a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.meau li:last-child a i {
+  font-size: 16px;
+}
+.logo a {
+  display: block;
+  width: 122px;
+  height: 32px;
+  background-image: url(../img/dff63979.sprites-index@2x.png);
+  background-size: 400px 400px;
+  text-indent: -9999px;
+}
+@media only screen and (min-width: 768px) {
+  .left-list {
+    order: 2;
+    flex: auto;
+  }
+  .logo {
+    order: 1;
+  }
+  .user-wapper {
+    order: 3;
+  }
+  .list {
+    display: none;
+  }
+  .meau {
+    display: flex;
+    position: static;
+    padding: 0 40px;
+    flex: auto;
+  }
+  .meau li {
+    line-height: 48px;
+    width: auto;
+    flex: none;
+    border: none;
+  }
+  .meau li:last-child a {
+    margin: 0;
+    display: block;
+  }
+  .meau span {
+    display: none;
+  }
+}
+.left-list:hover .meau {
+  display: flex;
+}
+/*# sourceMappingURL=./style.css.map */
